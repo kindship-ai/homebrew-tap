@@ -5,21 +5,21 @@
 class Kindship < Formula
   desc "Orchestrator for AI Coding Agents - Claude Code, Gemini CLI, Codex, OpenCode"
   homepage "https://kindship.ai/cli"
-  version "0.1.78"
+  version "0.1.79"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kindship-ai/kindship-cli/releases/download/v0.1.78/kindship_0.1.78_darwin_amd64.tar.gz"
-      sha256 "f2e0c92da7cd76b35dbf928fa617ae333bb216a149df6b2b90864c8ddac03014"
+      url "https://github.com/kindship-ai/kindship-cli/releases/download/v0.1.79/kindship_0.1.79_darwin_amd64.tar.gz"
+      sha256 "a7818d4330a13296a7ebb643a7ec4db18e64415bad6622c3e7c272a0b8d1f5fb"
 
       define_method(:install) do
         bin.install "kindship"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kindship-ai/kindship-cli/releases/download/v0.1.78/kindship_0.1.78_darwin_arm64.tar.gz"
-      sha256 "5514796c7142abbc1a0e7cc395cb53676d83d65593b1a1e66f8fa0cd2777a40e"
+      url "https://github.com/kindship-ai/kindship-cli/releases/download/v0.1.79/kindship_0.1.79_darwin_arm64.tar.gz"
+      sha256 "95205f642acc407aca8c53b7d211191b0474c36f28d12407d240b20dd540cbf4"
 
       define_method(:install) do
         bin.install "kindship"
@@ -29,15 +29,15 @@ class Kindship < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kindship-ai/kindship-cli/releases/download/v0.1.78/kindship_0.1.78_linux_amd64.tar.gz"
-      sha256 "fcadf10e0282402a0b75172999a65080bdf8e03f6f2331770a44c0df500bc557"
+      url "https://github.com/kindship-ai/kindship-cli/releases/download/v0.1.79/kindship_0.1.79_linux_amd64.tar.gz"
+      sha256 "dbd486b7e129f3658b3dac24f140df336874913db76e63fa5fd2263aea848bb3"
       define_method(:install) do
         bin.install "kindship"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kindship-ai/kindship-cli/releases/download/v0.1.78/kindship_0.1.78_linux_arm64.tar.gz"
-      sha256 "d8d3f5e7df49b72028b3e99059f5b9a9b52f92400404d0262b25ca04fe480735"
+      url "https://github.com/kindship-ai/kindship-cli/releases/download/v0.1.79/kindship_0.1.79_linux_arm64.tar.gz"
+      sha256 "f8c4bcd0ac05a9414b4c26f1a050e3696fd1fe8fb83cebc8cf0d532f582feb32"
       define_method(:install) do
         bin.install "kindship"
       end
